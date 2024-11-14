@@ -25,11 +25,19 @@
             font-weight: bold;
             font-family: 'Calibri';
         }
+        header p{
+            color: whitesmoke;
+        }
     </style>
     <header>
         <h1>FLASK</h1>
+        <p>Main Route</p>
     </header>
+    <p>Bem vindo {{context.usuario}} com {{context.idade}} anos</p>
     <p>{{message}}</p>
     <p>Realizei minha conexão com o git</p>
+    <a href="{{url_for('newpage')}}">link novo página</a><br>
+    <a href="/nova/">link antigo página</a>
+
 </body>
 </html>
